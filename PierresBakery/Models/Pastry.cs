@@ -9,7 +9,9 @@ namespace PierresBakery
      public Pastry (int userInput)
     {
       Quantity = userInput;
-
+      PastryTotal = Quantity;
     }
+
+    
   }
 }

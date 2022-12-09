@@ -22,11 +22,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetPastryPrice_ItReturnsTotalPastryPrice_Int()
+    public void GetPastryPrice_ItReturnsTotalPastryPriceProperty_Int()
     {
       int userInput = 1;
       Pastry newPastry = new Pastry(userInput);
-      Assert.AreEqual(3, newPastry.PastryTotal);
+      Assert.AreEqual(1, newPastry.PastryTotal);
     }
+
+    
   }
 }
