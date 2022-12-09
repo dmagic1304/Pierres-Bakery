@@ -30,7 +30,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void BreadCalc_ItWillCalculateTotalBreadrice_Int()
+    public void BreadCalc_ItWillCalculateTotalBreadPrice_Int()
     {
       int userInput = 2;
       Bread newBread = new Bread(userInput);
