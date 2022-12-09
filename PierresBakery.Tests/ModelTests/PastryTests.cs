@@ -26,7 +26,7 @@ namespace PierresBakery.Tests
     {
       int userInput = 1;
       Pastry newPastry = new Pastry(userInput);
-      Assert.AreEqual(1, newPastry.PastryTotal);
+      Assert.AreEqual(2, newPastry.PastryTotal);
     }    
 
     [TestMethod]
