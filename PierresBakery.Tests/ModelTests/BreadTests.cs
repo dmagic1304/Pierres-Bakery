@@ -28,5 +28,13 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(userInput);
       Assert.AreEqual(userInput, newBread.BreadTotal);
     }
+
+    [TestMethod]
+    public void BreadCalc_ItWillCalculateTotalBreadrice_Int()
+    {
+      int userInput = 5;
+      Bread newBread = new Bread(userInput);
+      Assert.AreEqual(25, newBread.BreadCalc());
+    }
   }
 }
