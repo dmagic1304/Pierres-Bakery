@@ -8,17 +8,15 @@ namespace PierresBakery
     public Bread (int userInput)
     {
       Quantity = userInput;
-      BreadTotal = Quantity;
+      BreadTotal = BreadCalc();
     }
 
     public int BreadCalc()
     {
       int loafPrice = 5;
-      int totalPrice = loafPrice * Quantity;
-      if(Quantity == 3)
-      {
-        totalPrice = totalPrice -loafPrice;
-      }
+      int promotionCount = Quantity / 3;
+      int totalPrice = (loafPrice * Quantity) - (loafPrice * promotionCount);
+     
       return totalPrice;
     }
 

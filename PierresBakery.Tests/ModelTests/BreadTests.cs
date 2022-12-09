@@ -24,17 +24,17 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadPrice_ItReturnsTotalBreadPrice_Int()
     {
-      int userInput = 5;
+      int userInput = 1;
       Bread newBread = new Bread(userInput);
-      Assert.AreEqual(userInput, newBread.BreadTotal);
+      Assert.AreEqual(5, newBread.BreadTotal);
     }
 
     [TestMethod]
     public void BreadCalc_ItWillCalculateTotalBreadrice_Int()
     {
-      int userInput = 5;
+      int userInput = 2;
       Bread newBread = new Bread(userInput);
-      Assert.AreEqual(25, newBread.BreadCalc());
+      Assert.AreEqual(10, newBread.BreadCalc());
     }
 
     [TestMethod]
