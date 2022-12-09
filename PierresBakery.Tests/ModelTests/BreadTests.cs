@@ -44,5 +44,13 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(userInput);
       Assert.AreEqual(10, newBread.BreadCalc());
     }
+
+    [TestMethod]
+    public void BreadCalc_ItWillNotCalculateEveryThirdBread_Int()
+    {
+      int userInput = 8;
+      Bread newBread = new Bread(userInput);
+      Assert.AreEqual(30, newBread.BreadCalc());
+    }
   }
 }
