@@ -45,6 +45,14 @@ namespace PierresBakery.Tests
       Assert.AreEqual(5, newPastry.PastryCalc());
     }
 
+    [TestMethod]
+    public void PastryCalc_ItWillBatchEvery3PastriesToSpecPrice_Int()
+    {
+      int userInput = 5;
+      Pastry newPastry = new Pastry(userInput);;
+      Assert.AreEqual(9, newPastry.PastryCalc());
+    }
+
     
   }
 }
