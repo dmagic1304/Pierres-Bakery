@@ -9,17 +9,17 @@ namespace PierresBakery
      public Pastry (int userInput)
     {
       Quantity = userInput;
-      PastryTotal = Quantity;
+      PastryTotal = PastryCalc();
     }
 
     public int PastryCalc()
     {
-      int singlePrice = 2;      
-      int totalPrice = singlePrice * Quantity;
-      if (Quantity == 3)
-      {
-        totalPrice = 5;
-      }
+      int singlePrice = 2;
+      int comboPrice = 5;      
+      int singlePricedN = Quantity % 3;
+      int comboPricedN = Quantity / 3; 
+
+      int totalPrice = (comboPricedN * comboPrice) + (singlePricedN * singlePrice);
      
       return totalPrice;
     }

@@ -1,31 +1,22 @@
-# _Currency Exchanger_
+# _Pierre's Bakery_
 
 #### By _**Dominik Magic**_
 
-#### _A website that will convert USD to another currency._<p>&nbsp;</p>  
+#### _A console app for bakery sales._<p>&nbsp;</p>  
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _JavaScript_
-* _Bootstrap_
-* _Webpack_
-* _Eslint_
-* _Babel_
+* _C#_
+* _MS Test_
 
 ## Description
 
-_This website was created by for purpose of demonstrating the use of API calls and API Keys. The website will fetch the current exchange rates from API and store the data in session storage. The user inputs a value in USD and selects the desired currency exchange rate from the list of all supported currencies. Upon submission, the exchange rate and total amount will be displayed._
+_This console application was created by for purpose of using C# namespaces, classes, properties, and most importantly, building the application using TDD process with MS Tests. The application will inform the user of current prices and sales, and then ask the user to input how many items do they wish to purchase. Based on the input, the application will apply the special promotion prices if needed and return the total to the user._
 
 ## Setup/Installation Requirements
 
-* _Clone [this](https://github.com/dmagic1304/Currency-Exchanger) repositiory to your desktop_
-* _To get your own unique API Key, visit [ExchangeRate-API](https://www.exchangerate-api.com/) site. Input your email address and click the "Get Free Key" button. This will prompt you to create an account, and upon account creation you will receive your API Key_
-* _Once you have your API key, go to the Currency-exchange folder that you cloned and create .env folder in the root project directory then store the API key inside using the following format **API_KEY='Your-unique-API-key'**_
-* _Open the terminal in Currency-exchange folder located on your desktop_
-* _Run "npm install" command in the terminal to install required dependencies_
-* _Once the install is compleated, run "npm run start" command in the terminal to open the application in browser_
+* _Clone [this](https://github.com/dmagic1304/Pierres-Bakery) repositiory to your desktop_
+* _Using your code editor, open the cloned portfolio folder located on your desktop_
 
 
 
