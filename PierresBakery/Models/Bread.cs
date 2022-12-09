@@ -11,6 +11,13 @@ namespace PierresBakery
       BreadTotal = Quantity;
     }
 
+    public int BreadCalc()
+    {
+      int loafPrice = 5;
+      int totalPrice = loafPrice * Quantity;
+      return totalPrice;
+    }
+
    
   }
 }
