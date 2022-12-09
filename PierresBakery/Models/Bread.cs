@@ -15,6 +15,10 @@ namespace PierresBakery
     {
       int loafPrice = 5;
       int totalPrice = loafPrice * Quantity;
+      if(Quantity == 3)
+      {
+        totalPrice = totalPrice -loafPrice;
+      }
       return totalPrice;
     }
 
