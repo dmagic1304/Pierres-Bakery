@@ -14,11 +14,19 @@ namespace PierresBakery.Tests
     }
     
     [TestMethod]
-    public void GetInput_ItStoreUserInputAsProperty_Int()
+    public void GetInput_ItStoresUserInputAsProperty_Int()
     {
       int userInput = 5;
       Bread newBread = new Bread(userInput);
       Assert.AreEqual(userInput, newBread.Quantity);
+    }
+
+    [TestMethod]
+    public void GetBreadPrice_ItReturnsTotalBreadPrice_Int()
+    {
+      int userInput = 5;
+      Bread newBread = new Bread(userInput);
+      Assert.AreEqual(userInput, newBread.BreadTotal);
     }
   }
 }
