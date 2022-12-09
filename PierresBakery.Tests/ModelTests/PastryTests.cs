@@ -27,15 +27,7 @@ namespace PierresBakery.Tests
       int userInput = 1;
       Pastry newPastry = new Pastry(userInput);
       Assert.AreEqual(1, newPastry.PastryTotal);
-    }
-
-    [TestMethod]
-    public void PastryCalc_ItWillCalculateTotalPastryPrice_Int()
-    {
-      int userInput = 1;
-      Pastry newPastry = new Pastry(userInput);
-      Assert.AreEqual(1, newPastry.PastryTotal);
-    }
+    }    
 
     [TestMethod]
     public void PastryCalc_ItWillCalculateTotalPastryPrice_Int()

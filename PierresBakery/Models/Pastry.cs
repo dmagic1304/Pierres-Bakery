@@ -12,6 +12,14 @@ namespace PierresBakery
       PastryTotal = Quantity;
     }
 
+    public int PastryCalc()
+    {
+      int singlePrice = 2;      
+      int totalPrice = singlePrice * Quantity;
+     
+      return totalPrice;
+    }
+
     
   }
 }
