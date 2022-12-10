@@ -13,8 +13,10 @@ namespace PierresBakery
       Console.ResetColor();
       Console.WriteLine("Here is our offer for today:");
       Console.WriteLine("--------------------------------------------------------------------------");
-      Console.WriteLine(">> Fresh bread for only $5 per loaf with a special offer of BUY 2 GET 1 FREE!!");
-      Console.WriteLine(">> Tasty Pastry at $2 for one with special price of 5$ FOR 3!!");
+      Console.WriteLine(">> Fresh bread for only $5 per loaf with a special offer of {0}BUY 2 GET 1 FREE!!",Console.ForegroundColor = ConsoleColor.Red);
+      Console.ResetColor();
+      Console.WriteLine(">> Tasty Pastry at $2 for one with special price of {0}5$ FOR 3!!",Console.ForegroundColor = ConsoleColor.Red);
+      Console.ResetColor();
       Console.WriteLine("--------------------------------------------------------------------------");
 
       Console.WriteLine("How many loafs of bread would you like to buy?");
@@ -29,6 +31,16 @@ namespace PierresBakery
       Console.WriteLine("Thank you for your purchase!");
       Console.WriteLine("The total cost is going to be ${0} dollars.", totalCost);
 
+      Console.WriteLine("Would you like to make another purchase? /[Y]-yes [N]-no");
+      string answer = Console.ReadLine().ToLower();
+      if(answer == "y") 
+      {
+        Main();
+      } 
+      else
+      { 
+        Console.WriteLine("Goodbye!");
+      }  
     }
   }
 }
