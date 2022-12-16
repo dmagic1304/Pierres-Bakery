@@ -18,9 +18,9 @@ _This console application was created by for purpose of using C# namespaces, cla
 
 * _Clone [this](https://github.com/dmagic1304/Pierres-Bakery) repositiory to your desktop_
 * _Using your terminal, navigate the cloned portfolio folder located on your desktop_
-* _Once you are in the root folder of the project, move to the "PierresBaery.Tests" folder and run "dotnet restore" command in your terminal to install the MS Test framework_
+* _Once you are in the root folder of the project, move to the "PierresBakery.Tests" folder and run "dotnet restore" command in your terminal to install the MS Test framework_
 * _To run the tests, run the "dotnet test" command in your terminal_
-* _To run the application, navigate to the "root/PierresBaery.Tests" folder using your terminal and once there, run "dotnet run" command in the terminal_
+* _To run the application, navigate to the "root/PierresBakery" folder using your terminal and once there, run "dotnet run" command in the terminal_
 
 
 
